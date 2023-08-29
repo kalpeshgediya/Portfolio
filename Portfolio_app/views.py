@@ -27,6 +27,7 @@ class home_view(TemplateView):
             form_error = False
             FullName = request.POST.get('name', None)
             Email_ID = request.POST.get('email', None)
+            phone = request.POST.get('phone', None)
             Subject = request.POST.get('subject', None)
             Message = request.POST.get('message', None)
 
@@ -34,7 +35,7 @@ class home_view(TemplateView):
             regex = '^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
             
 
-            if FullName in ['', None] or Subject in ['', None] or Message in ['', None]:
+            if FullName in ['', None] or  phone in ['', None] or Subject in ['', None] or Message in ['', None]:
                 messages.error(request, "All fields are  required..")
                 form_error = True
                 
@@ -47,33 +48,35 @@ class home_view(TemplateView):
                 
                 else:
                     if not(form_error):
-                        visitor = visitorquery(name = FullName,email = Email_ID, subject = Subject, message = Message)
+                        visitor = visitorquery(name = FullName,email = Email_ID,phone = phone,subject = Subject,message = Message)
                         visitor.save()
-                        print(visitor,'----------------')
 
                         email_text = f"""
                         name : {FullName}
                         email : {Email_ID}
+                        phone : {phone}
                         Subject : {Subject}
                         Message : {Message}"""
 
                         email_textc = f"""
                         Thank you {FullName}
                         I will contact you shortly
+
                         Regards,
-                        Harsh Vekariya"""
+                        Kalpesh Gediya
+                        You can contact me on +917227993344"""
 
                         recipientsc = [visitor.email]
-                        recipients = ["vekariyaharsh01@gmail.com"]
+                        recipients = ["gediya.kalpesh@gmail.com"]
                         msg = MIMEText(email_text)
                         msgc = MIMEText(email_textc)
-                        msg["Subject"] = "Harsh Portfolio"
-                        msgc["Subject"] = "Harsh Vekariya"
+                        msg["Subject"] = "Kalpesh Portfolio"
+                        msgc["Subject"] = "Kalpesh Gediya"
                         msg["From"] = visitor.email
 
                         smtp_server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-                        smtp_server.login("vekariyaharsh01@gmail.com", "vpzzirbsyaffawhr")
-                        smtp_server.sendmail("vekariyaharsh01@gmail.com", recipients, msg.as_string())
+                        smtp_server.login("gediya.kalpesh@gmail.com", "lcbxoabytimpsthj")
+                        smtp_server.sendmail("gediya.kalpesh@gmail.com", recipients, msg.as_string())
                         smtp_server.sendmail(visitor.email, recipientsc, msgc.as_string())
                         smtp_server.quit()
                         return redirect('Portfolio_app:home_view')
