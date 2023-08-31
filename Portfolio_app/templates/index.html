@@ -70,7 +70,7 @@ http://www.templatemo.com/tm-505-stacked
                               </div>
                             </div>
                             <div class="right-image">
-                              <img src="{% static 'img/hii.jpg' %}" alt="">
+                              <img src="{% static 'img/kalpesh1.png' %}" alt="">
                             </div>
                           </div>
                         </div>
@@ -236,6 +236,7 @@ http://www.templatemo.com/tm-505-stacked
                         <div class="col-md-8">
                           <div class="contat-form">
                             <form id="contact" action="{% url 'Portfolio_app:home_view' %}" method="post">
+                              {{dict}}
                               {%csrf_token%}
                               <fieldset>
                                 <input name="name" type="text" class="form-control" id="name" placeholder="Your Name" required>
