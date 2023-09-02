@@ -11,12 +11,12 @@ body {
 }
 
 p {
-	font-size: 13px;
+	font-size: 17px;
 	line-height: 26px;
 }
 
 a {
-	color: #ff6;
+	color: #fa5252;
 }
 
 a:hover {
@@ -391,7 +391,7 @@ ul {
 }
 
 .about-content .about-box-text {
-  background-color: #fff;
+  background-color: #a8a9aa;
   padding: 30px;
   margin-top: 60px;
 }
@@ -662,7 +662,7 @@ ul {
     position: relative;
   }
   .about-content .about-box-text {
-    background-color: #fff;
+    background-color: #a8a9aa;
     padding: 30px;
     margin-top: -30px;
     margin-left: 15px;

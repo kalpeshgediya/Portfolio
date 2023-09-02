@@ -35,21 +35,24 @@ http://www.templatemo.com/tm-505-stacked
 
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#1" class="nav__link c-blue"><img src="{% static 'img/home-icon.png' %}" alt=""></a>
+              <a href="#1" class="nav__link c-blue"><img src="{% static 'img/icons8-home-100.png' %}" alt=""></a>
             </li>
             <li class="nav__item">
-              <a href="#2" class="nav__link c-yellow scrolly"><img src="{% static 'img/about-icon.png' %}" alt=""></a>
+              <a href="#2" class="nav__link c-yellow scrolly"><img src="{% static 'img/icons8-community-100.png' %}" alt=""></a>
             </li>
             <li class="nav__item">
-              <a href="#3" class="nav__link c-red"><img src="{% static 'img/projects-icon.png' %}" alt=""></a>
+              <a href="#3" class="nav__link c-red"><img src="{% static 'img/icons8-skill-100.png' %}" alt=""></a>
             </li>
             <li class="nav__item">
-              <a href="#4" class="nav__link c-green"><img src="{% static 'img/contact-icon.png' %}" alt=""></a>
+              <a href="#4" class="nav__link c-green"><img src="{% static 'img/project.png' %}" alt=""></a>
+            </li>
+            <li class="nav__item">
+              <a href="#5" class="nav__link c-green"><img src="{% static 'img/contact.png' %}" alt=""></a>
             </li>
           </ul>
         </nav>
 
-        <section class="panel b-blue">
+        <section class="panel b-blue" id="1">
           <article class="panel__wrapper">
             <div class="panel__content">
               <div class="container">
@@ -63,8 +66,8 @@ http://www.templatemo.com/tm-505-stacked
                         <div class="col-md-12">
                           <div class="home-box-content">
                             <div class="left-text">
-                              <h4>New <em>Stacked</em> Template</h4>
-                              <p>Stacked is brought to you by TemplateMo. Lorem ipsum dolor sit amet, consectetur adipiscing elit etiam sit amet ante vehicula, aliquam mauris in, luctus neque.</p>
+                              <h4>i'm a <em></br><b>Python</b></em> Developer</h4>
+                              <p>Welcome to my corner of the internet, where lines of code come to life and ideas turn into reality. I'm a passionate Python developer with a flair for turning complex problems into elegant solutions.</p>
                               <div class="primary-button">
                                 <a href="{% static 'kalpesh_cv.pdf' %}" target="#">Download CV</a>
                               </div>
@@ -82,7 +85,7 @@ http://www.templatemo.com/tm-505-stacked
             </div>
           </article>
         </section>
-        <section class="panel b-yellow" >
+        <section class="panel b-yellow" id="2" >
           <article class="panel__wrapper">
             <div class="panel__content">
               <div class="container">
@@ -90,20 +93,20 @@ http://www.templatemo.com/tm-505-stacked
                   <div class="col-md-8 col-md-offset-2">
                     <div class="about-content">
                       <div class="heading">
-                        <h4>About us</h4>
+                        <h4 style="color: #fa5252"><b>Why Python?</b></h4>
                       </div>
                       <div class="row">
                         <div class="col-md-12">
                           <div class="about-box-content">
-                            <img src="{% static 'img/about-image.png' %}" alt="">
+                            <img src="{% static 'img/python.png' %}" alt="">
                           </div>
                         </div>
                         <div class="col-md-7 col-md-offset-5">
                           <div class="about-box-text">
-                            <h4>Curabitur varius sapien</h4>
-                            <p>Nulla vel accumsan dui. Aliquam tincidunt elit elit, nec iaculis neque interdum dictum. Donec venenatis quam enim, eu mattis arcu rhoncus id. Ut ac urna tellus.</p>
+                            <!-- <h4>Why Python?</h4> -->
+                            <p>Python isn't just a programming language to me; it's a canvas on which I craft my digital masterpieces. Its simplicity, versatility, and vast ecosystem have made it my go-to tool for [mention the areas or projects where you primarily use Python, e.g., web development, data analysis, or machine learning].</p>
                             <div class="primary-button">
-                              <a >Discover More</a>
+                              <!-- <a >Discover More</a> -->
                             </div>
                           </div>
                         </div>
@@ -115,7 +118,38 @@ http://www.templatemo.com/tm-505-stacked
             </div>
           </article>
         </section>
-        <section class="panel b-red">
+        
+        <section class="panel b-yellow" id="3">
+          <article class="panel__wrapper">
+            <div class="panel__content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-8 col-md-offset-2">
+                    <div class="about-content">
+                      <div class="heading">
+                        <h4 style="color: #fa5252"> <b>My Superpowers </b></h4>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="about-box-content">
+                            <img src="{% static 'img/skills.jpg' %}" alt="">
+                          </div>
+                        </div>
+                        <div class="col-md-7 col-md-offset-5">
+                          <div class="about-box-text text-center">
+                            <p><b>Python<br> Django <br> DJango Rest Framework <br>HTML <br> CSS <br>Javascript <br> Bootstrap <br>Github <br> Postgrsql<br>MySql<br>Postman </b></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <section class="panel b-red" id="4">
           <article class="panel__wrapper">
             <div class="panel__content">
               <div class="container">
@@ -123,48 +157,39 @@ http://www.templatemo.com/tm-505-stacked
                   <div class="col-md-8 col-md-offset-2">
                     <div class="projects-content">
                       <div class="heading">
-                        <h4>Recent Projects</h4>
+                        <h4 style="color: #fa5252"><b>Recent Projects</b></h4>
                       </div>
                       <div class="row">
                         <div class="col-md-12">
                           <div class="owl-carousel owl-theme projects-container">
                             <div>
                               <div class="project-item">
-                                <a href="{% static 'img/project-item-01.jpg' %}" data-lightbox="image-1"><img src="{% static 'img/project-item-01.jpg' %}" alt=""></a>
+                                <a href="{% static 'img/ecommerce.jpg' %}" data-lightbox="image-1"><img src="{% static 'img/ecommerce.jpg' %}" alt=""></a>
                                 <div class="text-content">
-                                  <h4>Best Design</h4>
-                                  <p>Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.</p>
-                                  <div class="primary-button">
-                                    <a>Discover More</a>
-                                  </div>
+                                  <h4 style="text-align: center">E-Commerce web-applications</h4>
+                                  <p> E-commerce websites are online platforms that facilitate buying and selling of goods and services over the internet. They have become increasingly popular in recent years due to the convenience they offer to both businesses and consumers from online selling technologies.</p>
                                 </div>
                               </div>
                             </div>
                             <div>
                               <div class="project-item">
-                                <a href="{% static 'img/project-item-02.jpg' %}" data-lightbox="image-1"><img src="{% static 'img/project-item-02.jpg' %}" alt=""></a>
+                                <a href="{% static 'img/mobileapp.jpg' %}" data-lightbox="image-1"><img src="{% static 'img/mobileapp.jpg' %}" alt=""></a>
                                 <div class="text-content">
-                                  <h4>Creative Pen</h4>
-                                  <p>Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.</p>
-                                  <div class="primary-button">
-                                    <a>Discover More</a>
-                                  </div>
+                                  <h4 style="text-align: center">Mobile Applications</h4>
+                                  <p>Mobile applications continue to evolve and play a significant role in enhancing our daily lives, providing us with tools, entertainment, and information at our fingertips. The mobile app industry remains dynamic, with ongoing innovations and emerging technologies shaping its future..</p>
                                 </div>
                               </div>
                             </div>
                             <div>
                               <div class="project-item">
-                                <a href="{% static 'img/project-item-03.jpg' %}" data-lightbox="image-1"><img src="{% static 'img/project-item-03.jpg' %}" alt=""></a>
+                                <a href="{% static 'img/market.jpg' %}" data-lightbox="image-1"><img src="{% static 'img/market.jpg' %}" alt=""></a>
                                 <div class="text-content">
-                                  <h4>Nice Capture</h4>
-                                  <p>Lorem ipsum dolor, adipis scing elit etiam ante vehicula, aliquam mauris in, luctus neque.</p>
-                                  <div class="primary-button">
-                                    <a >Discover More</a>
-                                  </div>
+                                  <h4 style="text-align: center">Market Research Tool</h4>
+                                  <p>Market research is a crucial process for businesses and organizations seeking to understand their target market, customers, and industry dynamics. It involves collecting, analyzing, and interpreting data to make informed decisions and develop effective strategies.</p>
                                 </div>
                               </div>
                             </div>
-                            <div>
+                            <!-- <div>
                               <div class="project-item">
                                 <a href="{% static 'img/project-item-04.jpg' %}" data-lightbox="image-1"><img src="{% static 'img/project-item-04.jpg' %}" alt=""></a>
                                 <div class="text-content">
@@ -175,8 +200,8 @@ http://www.templatemo.com/tm-505-stacked
                                   </div>
                                 </div>
                               </div>
-                            </div>
-                            <div>
+                            </div> -->
+                            <!-- <div>
                               <div class="project-item">
                                 <a href="{% static 'img/project-item-05.jpg' %}" data-lightbox="image-1"><img src="{% static 'img/project-item-05.jpg' %}" alt=""></a>
                                 <div class="text-content">
@@ -187,8 +212,8 @@ http://www.templatemo.com/tm-505-stacked
                                   </div>
                                 </div>
                               </div>
-                            </div>
-                            <div>
+                            </div> -->
+                            <!-- <div>
                               <div class="project-item">
                                 <a href="{% static 'img/project-item-06.jpg' %}" data-lightbox="image-1"><img src="{% static 'img/project-item-06.jpg' %}" alt=""></a>
                                 <div class="text-content">
@@ -199,8 +224,8 @@ http://www.templatemo.com/tm-505-stacked
                                   </div>
                                 </div>
                               </div>
-                            </div>
-                            <div>
+                            </div> -->
+                            <!-- <div>
                               <div class="project-item">
                                 <a href="{% static 'img/project-item-07.jpg' %}" data-lightbox="image-1"><img src="{% static 'img/project-item-07.jpg' %}" alt=""></a>
                                 <div class="text-content">
@@ -211,7 +236,7 @@ http://www.templatemo.com/tm-505-stacked
                                   </div>
                                 </div>
                               </div>
-                            </div>
+                            </div> -->
                           </div>
                         </div>
                       </div>
@@ -222,7 +247,7 @@ http://www.templatemo.com/tm-505-stacked
             </div>
           </article>
         </section>
-        <section class="panel b-green">
+        <section class="panel b-green" id="5">
           <article class="panel__wrapper">
             <div class="panel__content">
               <div class="container">
@@ -230,7 +255,7 @@ http://www.templatemo.com/tm-505-stacked
                   <div class="col-md-8 col-md-offset-2">
                     <div class="contact-content">
                       <div class="heading">
-                        <h4>Contact us</h4>
+                        <h4 style="color: #fa5252"><b>Contact Me</b></h4>
                       </div>
                       <div class="row">
                         <div class="col-md-8">
@@ -261,9 +286,8 @@ http://www.templatemo.com/tm-505-stacked
                         </div>
                         <div class="col-md-4">
                           <div class="more-info">
-                            <p>Lorem ipsum dolor , consectetur adipiscing elit. Nunc purus ligula, ullamcorper id velit id, vestibulum auc sapien. Sed quis mauris eget sem imperdiet rhoncus.<br><br>
-                            <em>3344 Etiam mauris erat,
-								<br>Vestibulum eu augue nec, 10550</em></p>
+                            <p>Thank you for visiting my portfolio. Explore my work, learn more about my projects, and don't hesitate to reach out. Together, we can turn ideas into code, and code into innovation.<br><br>
+                            <em>Feel free to contact me and let's embark on this digital journey together.</p>
                           </div>
                         </div>
                       </div>
@@ -271,8 +295,8 @@ http://www.templatemo.com/tm-505-stacked
                   </div>
                   <div class="col-md-12">
                     <div class="footer">
-                      <p>Copyright &copy; 2017 Your Company 
-                      | Designed by TemplateMo</p>
+                      <p>Copyright &copy; 2023
+                      | Designed by Kalpesh Gediya</p>
                     </div>
                   </div>
                 </div>
