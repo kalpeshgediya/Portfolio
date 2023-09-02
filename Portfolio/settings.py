@@ -77,8 +77,8 @@ WSGI_APPLICATION = 'Portfolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
-server_type = 'localhost'
-# server_type = 'live'
+# server_type = 'localhost'
+server_type = 'live'
 
 if server_type == 'live':
     DATABASES = {
