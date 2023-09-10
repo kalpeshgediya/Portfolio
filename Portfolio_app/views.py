@@ -63,7 +63,7 @@ class home_view(TemplateView):
                         msg["From"] = visitor.email
 
                         smtp_server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
-                        smtp_server.login("gediya.kalpesh@gmail.com", "lcbxoabytimpsthj")
+                        smtp_server.login("gediya.kalpesh@gmail.com", "lrxbdrancdaycpmp")
                         smtp_server.sendmail("gediya.kalpesh@gmail.com", recipients, msg.as_string())
                         smtp_server.sendmail(visitor.email, recipientsc, msgc.as_string())
                         smtp_server.quit()
